@@ -4,6 +4,6 @@ import Insan from "./model";
 connectDb();
 export async function GET(req: Request, res: Response) {
   const allUser = await Insan.find({});
-  // console.log(allUser);
+  console.log(allUser);
   return NextResponse.json(allUser);
 }
